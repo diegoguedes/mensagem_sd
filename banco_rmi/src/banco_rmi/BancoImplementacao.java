@@ -14,7 +14,7 @@ public class BancoImplementacao extends UnicastRemoteObject implements Interface
 	
 	int identificador;
 	String nomeCliente;
-	BigDecimal saldo;
+	BigDecimal saldo = new BigDecimal(0);
 	
 	public BancoImplementacao(int numero, String nomeCliente, BigDecimal saldo) throws RemoteException{
 		this.identificador = numero;
